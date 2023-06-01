@@ -1,0 +1,988 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="#" /><link rel="search" title="Search" href="search.html" />
+
+    <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/><title>Index - CTN documentation</title>
+<link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">CTN  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">CTN  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          
+<section class="genindex-section">
+  <h1 id="index">Index</h1>
+  <div class="genindex-jumpbox"><a href="#A"><strong>A</strong></a> | <a href="#C"><strong>C</strong></a> | <a href="#D"><strong>D</strong></a> | <a href="#F"><strong>F</strong></a> | <a href="#G"><strong>G</strong></a> | <a href="#H"><strong>H</strong></a> | <a href="#I"><strong>I</strong></a> | <a href="#M"><strong>M</strong></a> | <a href="#O"><strong>O</strong></a> | <a href="#P"><strong>P</strong></a> | <a href="#R"><strong>R</strong></a> | <a href="#S"><strong>S</strong></a> | <a href="#T"><strong>T</strong></a> | <a href="#U"><strong>U</strong></a></div>
+</section>
+<section id="A" class="genindex-section">
+  <h2>A</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="ue.html#ue.Ue.add_new_packet">add_new_packet() (ue.Ue method)</a>
+</li>
+        <li><a href="machine.html#machine.Machine.add_new_ue">add_new_ue() (machine.Machine method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.add_packet">add_packet() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="packet.html#packet.HARQ.add_queue_entry">add_queue_entry() (packet.HARQ method)</a>
+
+        <ul>
+          <li><a href="packet.html#packet.PUCCH.add_queue_entry">(packet.PUCCH method)</a>
+</li>
+          <li><a href="packet.html#packet.PUSCH.add_queue_entry">(packet.PUSCH method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="packet.html#packet.PUSCH.add_rb_indexes">add_rb_indexes() (packet.PUSCH method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.are_ues_in_los">are_ues_in_los() (distribution.Distribution method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.assign_pdcch_to_g_node_b">assign_pdcch_to_g_node_b() (centralized.CentralizedScheduler method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.assign_pucch_to_ues">assign_pucch_to_ues() (centralized.CentralizedScheduler method)</a>
+
+        <ul>
+          <li><a href="g_node_b.html#g_node_b.GNodeB.assign_pucch_to_ues">(g_node_b.GNodeB method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="C" class="genindex-section">
+  <h2>C</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    centralized
+
+        <ul>
+          <li><a href="centralized.html#module-centralized">module</a>
+</li>
+        </ul></li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler">CentralizedScheduler (class in centralized)</a>
+</li>
+        <li>
+    channel
+
+        <ul>
+          <li><a href="channel.html#module-channel">module</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.check_scheduling_request_need">check_scheduling_request_need() (ue.Ue method)</a>
+</li>
+        <li>
+    compute_bler
+
+        <ul>
+          <li><a href="compute_bler.html#module-compute_bler">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="compute_bler.html#compute_bler.compute_bler">compute_bler() (in module compute_bler)</a>
+</li>
+        <li>
+    compute_n_channels
+
+        <ul>
+          <li><a href="compute_n_channels.html#module-compute_n_channels">module</a>
+</li>
+        </ul></li>
+        <li><a href="compute_n_channels.html#compute_n_channels.compute_n_channels">compute_n_channels() (in module compute_n_channels)</a>
+</li>
+        <li>
+    compute_simulator_tick_duration
+
+        <ul>
+          <li><a href="compute_simulator_tick_duration.html#module-compute_simulator_tick_duration">module</a>
+</li>
+        </ul></li>
+        <li><a href="compute_simulator_tick_duration.html#compute_simulator_tick_duration.compute_simulator_tick_duration">compute_simulator_tick_duration() (in module compute_simulator_tick_duration)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.create_uniform_bounded_instance">create_uniform_bounded_instance() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.create_uniform_instance">create_uniform_instance() (traffic_model.TrafficModel method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="D" class="genindex-section">
+  <h2>D</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="ue.html#ue.Ue.decode_harq">decode_harq() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.decode_hybrid_arq">decode_hybrid_arq() (ue.Ue method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.decode_received_pucchs">decode_received_pucchs() (centralized.CentralizedScheduler method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.decode_received_puschs">decode_received_puschs() (centralized.CentralizedScheduler method)</a>
+
+        <ul>
+          <li><a href="g_node_b.html#g_node_b.GNodeB.decode_received_puschs">(g_node_b.GNodeB method)</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="distribution.html#distribution.Distribution.distribute_g_node_b">distribute_g_node_b() (distribution.Distribution method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.distribute_machines">distribute_machines() (distribution.Distribution method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.distribute_ues">distribute_ues() (distribution.Distribution method)</a>
+</li>
+        <li>
+    distribution
+
+        <ul>
+          <li><a href="distribution.html#module-distribution">module</a>
+</li>
+        </ul></li>
+        <li><a href="distribution.html#distribution.Distribution">Distribution (class in distribution)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="F" class="genindex-section">
+  <h2>F</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.find_packet_by_id">find_packet_by_id() (ue_buffer.UeBuffer method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="G" class="genindex-section">
+  <h2>G</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    g_node_b
+
+        <ul>
+          <li><a href="g_node_b.html#module-g_node_b">module</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.g_node_b_get_scheduling_request_periodicity">g_node_b_get_scheduling_request_periodicity() (ue.Ue method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.generate_pdcch_list">generate_pdcch_list() (centralized.CentralizedScheduler method)</a>
+
+        <ul>
+          <li><a href="g_node_b.html#g_node_b.GNodeB.generate_pdcch_list">(g_node_b.GNodeB method)</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.generate_pucch">generate_pucch() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.generate_pusch">generate_pusch() (ue.Ue method)</a>
+</li>
+        <li>
+    geometry
+
+        <ul>
+          <li><a href="geometry.html#module-geometry">module</a>
+</li>
+        </ul></li>
+        <li><a href="geometry.html#geometry.Geometry">Geometry (class in geometry)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_arrival_time">get_arrival_time() (packet.Packet method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_buffer_size">get_buffer_size() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_burst_size">get_burst_size() (ue.Ue method)</a>
+</li>
+        <li>
+    get_bytes_per_pusch
+
+        <ul>
+          <li><a href="get_bytes_per_pusch.html#module-get_bytes_per_pusch">module</a>
+</li>
+        </ul></li>
+        <li><a href="get_bytes_per_pusch.html#get_bytes_per_pusch.get_bytes_per_pusch">get_bytes_per_pusch() (in module get_bytes_per_pusch)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.get_capacity_grid">get_capacity_grid() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_carrier_frequency">get_carrier_frequency() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.get_carrier_frequency">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_channel">get_channel() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.get_channel">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_coordinates">get_coordinates() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="machine.html#machine.Machine.get_coordinates">(machine.Machine method)</a>
+</li>
+          <li><a href="ue.html#ue.Ue.get_coordinates">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.get_current_packet_id">get_current_packet_id() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_current_packet_priority">get_current_packet_priority() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_current_packet_transmission_number">get_current_packet_transmission_number() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_distance_from_g_node_b">get_distance_from_g_node_b() (ue.Ue method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.get_distribution_type">get_distribution_type() (distribution.Distribution method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_elapsed_time">get_elapsed_time() (packet.Packet method)</a>
+</li>
+        <li><a href="geometry.html#geometry.Geometry.get_factory_dimensions">get_factory_dimensions() (geometry.Geometry method)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.get_fading_grid">get_fading_grid() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_first_packet">get_first_packet() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_first_packet_id">get_first_packet_id() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.get_friis_path_loss_db">get_friis_path_loss_db() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_generation_time">get_generation_time() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_id">get_id() (packet.Packet method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.get_inter_machine_distance">get_inter_machine_distance() (distribution.Distribution method)</a>
+
+        <ul>
+          <li><a href="geometry.html#geometry.Geometry.get_inter_machine_distance">(geometry.Geometry method)</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.get_last_packet_id">get_last_packet_id() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_los_condition">get_los_condition() (ue.Ue method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.get_machine_size">get_machine_size() (distribution.Distribution method)</a>
+
+        <ul>
+          <li><a href="geometry.html#geometry.Geometry.get_machine_size">(geometry.Geometry method)</a>
+</li>
+          <li><a href="machine.html#machine.Machine.get_machine_size">(machine.Machine method)</a>
+</li>
+        </ul></li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.get_max_generation_instant">get_max_generation_instant() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="machine.html#machine.Machine.get_max_number_of_ues">get_max_number_of_ues() (machine.Machine method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.get_max_total_bytes">get_max_total_bytes() (packet.PUSCH method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_mb_to_sent">get_mb_to_sent() (packet.Packet method)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.get_min_generation_instant">get_min_generation_instant() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_min_mb_to_be_send">get_min_mb_to_be_send() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_min_mb_to_send">get_min_mb_to_send() (packet.Packet method)</a>
+</li>
+        <li>
+    get_modulation_order
+
+        <ul>
+          <li><a href="get_modulation_order.html#module-get_modulation_order">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="get_modulation_order.html#get_modulation_order.get_modulation_order">get_modulation_order() (in module get_modulation_order)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_n_packets">get_n_packets() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.get_n_pusch_rb">get_n_pusch_rb() (centralized.CentralizedScheduler method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_new_packet_priority">get_new_packet_priority() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_next_packet_generation_instant">get_next_packet_generation_instant() (ue.Ue method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.get_number_of_machines">get_number_of_machines() (distribution.Distribution method)</a>
+</li>
+        <li><a href="machine.html#machine.Machine.get_number_of_ues">get_number_of_ues() (machine.Machine method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.get_occupied_os">get_occupied_os() (packet.PUSCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.get_occupied_resource_blocks">get_occupied_resource_blocks() (packet.PUSCH method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_packet_by_id">get_packet_by_id() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_packet_list">get_packet_list() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_packet_list_size">get_packet_list_size() (ue.Ue method)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.get_path_loss_from_3gpp_38901">get_path_loss_from_3gpp_38901() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.get_pending_packet_id">get_pending_packet_id() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_priority">get_priority() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_qos_latency">get_qos_latency() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_qos_reliability">get_qos_reliability() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.get_queue_max_deadline">get_queue_max_deadline() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.get_queue_max_retransmission_number">get_queue_max_retransmission_number() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.get_queue_min_priority">get_queue_min_priority() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.HARQ.get_queue_request_df">get_queue_request_df() (packet.HARQ method)</a>
+
+        <ul>
+          <li><a href="packet.html#packet.PUCCH.get_queue_request_df">(packet.PUCCH method)</a>
+</li>
+          <li><a href="packet.html#packet.PUSCH.get_queue_request_df">(packet.PUSCH method)</a>
+</li>
+        </ul></li>
+        <li><a href="packet.html#packet.PUCCH.get_queue_ue_id">get_queue_ue_id() (packet.PUCCH method)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.get_random_model">get_random_model() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.get_rb_indexes">get_rb_indexes() (packet.PUSCH method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.get_received_pucchs">get_received_pucchs() (centralized.CentralizedScheduler method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.get_request_bucket_size">get_request_bucket_size() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_retx_attempt">get_retx_attempt() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.PDCCH.get_scheduling_info">get_scheduling_info() (packet.PDCCH method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_scheduling_request_periodicity">get_scheduling_request_periodicity() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.get_scheduling_request_periodicity">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_scheduling_response_periodicity">get_scheduling_response_periodicity() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.get_scheduling_response_periodicity">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="packet.html#packet.Packet.get_size">get_size() (packet.Packet method)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.get_snr_grid">get_snr_grid() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_state">get_state() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.get_state">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.get_state_duration">get_state_duration() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.get_state_duration">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.get_time_periodicity">get_time_periodicity() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.get_tot_number_of_ues">get_tot_number_of_ues() (distribution.Distribution method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.get_total_bytes">get_total_bytes() (packet.PUSCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.get_total_request_bytes">get_total_request_bytes() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_transmission_counter">get_transmission_counter() (packet.Packet method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.get_ue_density">get_ue_density() (distribution.Distribution method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.get_ue_id">get_ue_id() (packet.Packet method)</a>
+
+        <ul>
+          <li><a href="packet.html#packet.PDCCH.get_ue_id">(packet.PDCCH method)</a>
+</li>
+          <li><a href="ue.html#ue.Ue.get_ue_id">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.get_ues_ul_buffer">get_ues_ul_buffer() (centralized.CentralizedScheduler method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_ul_buffer">get_ul_buffer() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.get_updated_packet_list">get_updated_packet_list() (ue.Ue method)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.get_variable_time_periodicity">get_variable_time_periodicity() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB">GNodeB (class in g_node_b)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="H" class="genindex-section">
+  <h2>H</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="packet.html#packet.HARQ">HARQ (class in packet)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="I" class="genindex-section">
+  <h2>I</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="packet.html#packet.Packet.increase_retx_attempt">increase_retx_attempt() (packet.Packet method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.increment_current_packet_transmission_number">increment_current_packet_transmission_number() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.increment_transmission_counter">increment_transmission_counter() (packet.Packet method)</a>
+</li>
+        <li>
+    instantiate_ues
+
+        <ul>
+          <li><a href="instantiate_ues.html#module-instantiate_ues">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="instantiate_ues.html#instantiate_ues.instantiate_ues">instantiate_ues() (in module instantiate_ues)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.is_pdcch_for_me">is_pdcch_for_me() (ue.Ue method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.is_pending">is_pending() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.is_received">is_received() (channel.OFDMChannel method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="M" class="genindex-section">
+  <h2>M</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    machine
+
+        <ul>
+          <li><a href="machine.html#module-machine">module</a>
+</li>
+        </ul></li>
+        <li><a href="machine.html#machine.Machine">Machine (class in machine)</a>
+</li>
+        <li>
+    module
+
+        <ul>
+          <li><a href="centralized.html#module-centralized">centralized</a>
+</li>
+          <li><a href="channel.html#module-channel">channel</a>
+</li>
+          <li><a href="compute_bler.html#module-compute_bler">compute_bler</a>
+</li>
+          <li><a href="compute_n_channels.html#module-compute_n_channels">compute_n_channels</a>
+</li>
+          <li><a href="compute_simulator_tick_duration.html#module-compute_simulator_tick_duration">compute_simulator_tick_duration</a>
+</li>
+          <li><a href="distribution.html#module-distribution">distribution</a>
+</li>
+          <li><a href="g_node_b.html#module-g_node_b">g_node_b</a>
+</li>
+          <li><a href="geometry.html#module-geometry">geometry</a>
+</li>
+          <li><a href="get_bytes_per_pusch.html#module-get_bytes_per_pusch">get_bytes_per_pusch</a>
+</li>
+          <li><a href="get_modulation_order.html#module-get_modulation_order">get_modulation_order</a>
+</li>
+          <li><a href="instantiate_ues.html#module-instantiate_ues">instantiate_ues</a>
+</li>
+          <li><a href="machine.html#module-machine">machine</a>
+</li>
+          <li><a href="packet.html#module-packet">packet</a>
+</li>
+          <li><a href="plot_hist2d.html#module-plot_hist2d">plot_hist2d</a>
+</li>
+          <li><a href="read_data.html#module-read_data">read_data</a>
+</li>
+          <li><a href="traffic_model.html#module-traffic_model">traffic_model</a>
+</li>
+          <li><a href="ue.html#module-ue">ue</a>
+</li>
+          <li><a href="ue_buffer.html#module-ue_buffer">ue_buffer</a>
+</li>
+        </ul></li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="O" class="genindex-section">
+  <h2>O</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="channel.html#channel.OFDMChannel">OFDMChannel (class in channel)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.order_buffer">order_buffer() (ue_buffer.UeBuffer method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="P" class="genindex-section">
+  <h2>P</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    packet
+
+        <ul>
+          <li><a href="packet.html#module-packet">module</a>
+</li>
+        </ul></li>
+        <li><a href="packet.html#packet.Packet">Packet (class in packet)</a>
+</li>
+        <li><a href="packet.html#packet.PDCCH">PDCCH (class in packet)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    plot_hist2d
+
+        <ul>
+          <li><a href="plot_hist2d.html#module-plot_hist2d">module</a>
+</li>
+        </ul></li>
+        <li><a href="packet.html#packet.PUCCH">PUCCH (class in packet)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH">PUSCH (class in packet)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="R" class="genindex-section">
+  <h2>R</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    read_data
+
+        <ul>
+          <li><a href="read_data.html#module-read_data">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="read_data.html#read_data.read_params">read_params() (in module read_data)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.remove_data">remove_data() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.remove_packet">remove_packet() (ue.Ue method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="S" class="genindex-section">
+  <h2>S</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="channel.html#channel.OFDMChannel.sample_fading_rvs">sample_fading_rvs() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.schedule_data">schedule_data() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.schedule_packet">schedule_packet() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_arrival_time">set_arrival_time() (packet.Packet method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_burst_size">set_burst_size() (ue.Ue method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.set_carrier_frequency">set_carrier_frequency() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.set_carrier_frequency">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.set_channel">set_channel() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.set_channel">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.set_coordinates">set_coordinates() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="machine.html#machine.Machine.set_coordinates">(machine.Machine method)</a>
+</li>
+          <li><a href="ue.html#ue.Ue.set_coordinates">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.set_distance_from_g_node_b">set_distance_from_g_node_b() (ue.Ue method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.set_distribution_type">set_distribution_type() (distribution.Distribution method)</a>
+</li>
+        <li><a href="channel.html#channel.OFDMChannel.set_fading_distribution">set_fading_distribution() (channel.OFDMChannel method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_generation_time">set_generation_time() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_id">set_id() (packet.Packet method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.set_inter_machine_distance">set_inter_machine_distance() (distribution.Distribution method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_los_condition">set_los_condition() (ue.Ue method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.set_machine_size">set_machine_size() (distribution.Distribution method)</a>
+
+        <ul>
+          <li><a href="geometry.html#geometry.Geometry.set_machine_size">(geometry.Geometry method)</a>
+</li>
+          <li><a href="machine.html#machine.Machine.set_machine_size">(machine.Machine method)</a>
+</li>
+        </ul></li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.set_max_generation_instant">set_max_generation_instant() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="machine.html#machine.Machine.set_max_number_of_ues">set_max_number_of_ues() (machine.Machine method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.set_max_total_bytes">set_max_total_bytes() (packet.PUSCH method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_mb_to_be_sent">set_mb_to_be_sent() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_mb_to_sent">set_mb_to_sent() (packet.Packet method)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.set_min_generation_instant">set_min_generation_instant() (traffic_model.TrafficModel method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="ue.html#ue.Ue.set_min_mb_to_be_send">set_min_mb_to_be_send() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_min_mb_to_send">set_min_mb_to_send() (packet.Packet method)</a>
+</li>
+        <li><a href="centralized.html#centralized.CentralizedScheduler.set_n_pusch_rb">set_n_pusch_rb() (centralized.CentralizedScheduler method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_new_packet_arrival_time">set_new_packet_arrival_time() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_new_packet_priority">set_new_packet_priority() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_new_packet_qos_latency">set_new_packet_qos_latency() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_new_packet_qos_reliability">set_new_packet_qos_reliability() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_new_packet_size">set_new_packet_size() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.set_occupied_os">set_occupied_os() (packet.PUSCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUSCH.set_occupied_resource_blocks">set_occupied_resource_blocks() (packet.PUSCH method)</a>
+</li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer.set_packet_list">set_packet_list() (ue_buffer.UeBuffer method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_priority">set_priority() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_qos_latency">set_qos_latency() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_qos_reliability">set_qos_reliability() (packet.Packet method)</a>
+</li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.set_random_model">set_random_model() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="packet.html#packet.PDCCH.set_scheduling_info">set_scheduling_info() (packet.PDCCH method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_scheduling_request_periodicity">set_scheduling_request_periodicity() (ue.Ue method)</a>
+</li>
+        <li><a href="ue.html#ue.Ue.set_scheduling_request_periodicity_g_node_b">set_scheduling_request_periodicity_g_node_b() (ue.Ue method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_size">set_size() (packet.Packet method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.set_state">set_state() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.set_state">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel.set_time_periodicity">set_time_periodicity() (traffic_model.TrafficModel method)</a>
+</li>
+        <li><a href="distribution.html#distribution.Distribution.set_tot_number_of_ues">set_tot_number_of_ues() (distribution.Distribution method)</a>
+</li>
+        <li><a href="geometry.html#geometry.Geometry.set_ue_g_node_b_distances">set_ue_g_node_b_distances() (geometry.Geometry method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.set_ue_id">set_ue_id() (packet.Packet method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.set_ue_id">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue.set_ue_id_of_new_packet">set_ue_id_of_new_packet() (ue.Ue method)</a>
+</li>
+        <li><a href="geometry.html#geometry.Geometry.set_use_case">set_use_case() (geometry.Geometry method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="T" class="genindex-section">
+  <h2>T</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    traffic_model
+
+        <ul>
+          <li><a href="traffic_model.html#module-traffic_model">module</a>
+</li>
+        </ul></li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="traffic_model.html#traffic_model.TrafficModel">TrafficModel (class in traffic_model)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+<section id="U" class="genindex-section">
+  <h2>U</h2>
+  <table style="width: 100%" class="indextable genindextable"><tr>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li>
+    ue
+
+        <ul>
+          <li><a href="ue.html#module-ue">module</a>
+</li>
+        </ul></li>
+        <li><a href="ue.html#ue.Ue">Ue (class in ue)</a>
+</li>
+        <li>
+    ue_buffer
+
+        <ul>
+          <li><a href="ue_buffer.html#module-ue_buffer">module</a>
+</li>
+        </ul></li>
+        <li><a href="ue_buffer.html#ue_buffer.UeBuffer">UeBuffer (class in ue_buffer)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.update_elapsed_time">update_elapsed_time() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.update_max_deadline">update_max_deadline() (packet.PUCCH method)</a>
+</li>
+    </ul></td>
+    <td style="width: 33%; vertical-align: top;"><ul>
+        <li><a href="packet.html#packet.PUCCH.update_max_retransmission_number">update_max_retransmission_number() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.Packet.update_mb_to_sent">update_mb_to_sent() (packet.Packet method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.update_min_priority">update_min_priority() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.update_request_bucket_size">update_request_bucket_size() (packet.PUCCH method)</a>
+</li>
+        <li><a href="packet.html#packet.PUCCH.update_request_bytes">update_request_bytes() (packet.PUCCH method)</a>
+</li>
+        <li><a href="g_node_b.html#g_node_b.GNodeB.update_state_duration">update_state_duration() (g_node_b.GNodeB method)</a>
+
+        <ul>
+          <li><a href="ue.html#ue.Ue.update_state_duration">(ue.Ue method)</a>
+</li>
+        </ul></li>
+        <li><a href="packet.html#packet.PUSCH.update_total_bytes">update_total_bytes() (packet.PUSCH method)</a>
+</li>
+    </ul></td>
+  </tr></table>
+</section>
+
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2022, CTN |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+# To select a given traffic, please choose among the following numbers:
+#    1 : Periodic
+#    2 : Aperiodic
+#    3 : Burst Periodic
+#    4 : Burst Aperiodic
+
+traffic_1 :
+    type : 1
+    period : 0.0015 # s
+    qos_latency: 2.5 # ms
+    qos_reliability: 99.999 # %
+    priority: 1 # The highest priority is 0
+    percentage_of_ue : 100
+    payload: 4000  # bytes
+    bucket_size_perc: 40  # bucket size in percentage
+
+#traffic_2 :
+#     type : 1
+#     period : 0.0015 # s
+#     qos_latency: 1.8 # ms
+#     qos_reliability: 99.999 # %
+#     priority: 0
+#     percentage_of_ue : 50
+#     payload: 100  # bytes
+#     bucket_size_perc: 40  # bucket size in percentage
+
+radio :
+    carrier_frequency : 3.5 # Central carrier [GHz]
+    bandwidth : 0.02 # Overall bandwidth used by gNB [GHz]
+    subcarrier_spacing : 30 # kHz [30, 60, 120, 480]
+    subframe_duration : 1 # ms
+    frame_duration : 10 # ms
+    n_bytes_overhead_5g_nr : 72 # Upper layer 5G-NR overhead from TCP to MAC (IPv4) taken from table 5.4.4-1 of ETSI TR 137 901-5 (V16.1.0)
+    n_os_su : 7 # OFDM symbols forming a scheduling unit (input from Huawei)
+    n_control_su : 2 # Number of scheduling unit used for control plane
+    n_processing_os_pucch_g_node_b : 5 # OFDM symbols taken by the gNB for processing the received PUCCH (inputs from Huawei)
+    n_processing_os_pdcch_ue : 6 # OFDM symbols taken by UEs for processing the received PDCCH (inputs from Huawei)
+    n_os_pusch: 4 # OFDM symbols taken for PUSCH transmission
+    n_os_tx_rx_switch: 1 # OFDM symbols taken for switching between TX and RX (supposing half-duplex)
+    n_os_harq: 2 # OFDM symbols taken for HARQ transmission
+    n_subcarriers_per_pusch: 12 # Number of subcarriers used for a PUSCH, that is one Resource Block
+    fading_distribution : nakagami
+    loc : 0 # First parameter
+    scale : 1 # Second parameter
+    k : 10
+    nu : 3
+    standard_deviation : 2 # dB 
+    path_loss_exponent : 2
+
+core_network:
+    delay : 0.1 # Delay from gNB to a server in the core network (C/M) [ms]
+
+geometry :
+    machine_height: 5 # used in distribution.py >> are_ues_in_los function
+    machine_size : 3
+    inter_machine_distance : 6
+    machine_distribution: 1 # To apply one ue scenario
+    machine_init_tile: 1 # select start tile and end tile for number of machines /movement 1-2500
+    machine_end_tile: 1
+    machine_list_tile: [] # define the tiles in a list
+    ue_coordinates_x_y_z: [0,0,0]    # set the position of the ue less than factory size
+    run_machine_all_tiles: True # to run one ue for all position of machines
+
+agent:
+    type : thompson # Select among {'exp3','ucb','thompson', 'deep', 'random'}
+    gamma : 0.05 # For the Exp3Agent
+    c : 2 # For the UCBAgent
+
+ue: 
+#    ue_spatial_distribution: "Uniform"
+#    ue_spatial_distribution: "Uniform_Guaranteed"
+    ue_spatial_distribution: "tile_center"
+    number_of_ues : 2
+    ue_starting_state: "LOW_POWER"
+
+g_node_b:
+    number_of_g_node_bs : 1
+    g_node_b_starting_state: "LOW_POWER"
+    h_g_node_b : 1.5
+
+# To select a given use-case, please choose among the following numbers:
+#    1 : Control-to-Control
+#    2 : Augmented Reality  
+#    3 : Motion Control_Printing Machine
+#    4 : Motion Control_Machine Tool
+#    5 : Motion Control_Packaging Machine
+#    6 : Remote Access and Maintenance
+#    7 : Mobile Control Panels_Assembly Robots
+#    8 : Mobile Control Panels_Mobile cranes
+#    9 : Mobile Robots
+#    10: Closed-Loop Process Control
+#    11: Bi-rex
+#    12: fix-ue # No ue attached to machine
+choosen_use_case: 6 # it is set inside the code by uc
+
+# High-Level simulation parameters
+simulation:
+    tot_simulation_time: 0.05 # s
+    scheduling : 'centralized-grant-based' # uplink scheduling mechanism {'centralized-grant-based',
+                                               # 'centralized-semi-persistent', 'centralized-grant-free', 'distributed'}
+    experiment : 'channel_test_8' # {'numerology', 'users', 'period', 'traffic'}

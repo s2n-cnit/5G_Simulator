@@ -1,0 +1,482 @@
+<!doctype html>
+<html class="no-js">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" />
+
+    <meta name="generator" content="sphinx-4.4.0, furo 2022.01.02"/>
+        <title>ue module - CTN documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
+  <body>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <line x1="4" y1="6" x2="20" y2="6" />
+      <line x1="10" y1="12" x2="20" y2="12" />
+      <line x1="6" y1="18" x2="20" y2="18" />
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">CTN  documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">CTN  documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  
+</div>
+</div>
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <div class="section" id="module-ue">
+<span id="ue-module"></span><h1>ue module<a class="headerlink" href="#module-ue" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ue.Ue">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ue.</span></span><span class="sig-name descname"><span class="pre">Ue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ue_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">traffic_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">starting_state</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="traffic_model.html#traffic_model.TrafficModel" title="traffic_model.TrafficModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">traffic_model.TrafficModel</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.add_new_packet">
+<span class="sig-name descname"><span class="pre">add_new_packet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_tick</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.add_new_packet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new packet in the queue and compute the next generation instant, if the buffer is not full.
+Otherwise, just discard the packet.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.check_scheduling_request_need">
+<span class="sig-name descname"><span class="pre">check_scheduling_request_need</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">priority_metric</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.check_scheduling_request_need" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.decode_harq">
+<span class="sig-name descname"><span class="pre">decode_harq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">harq_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="packet.html#packet.HARQ" title="packet.HARQ"><span class="pre">packet.HARQ</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.decode_harq" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Find the HARQ intended for this UE and remove the (portion of) packets that have been correctly received</p>
+</div></blockquote>
+<dl class="simple">
+<dt>harq_list<span class="classifier">list</span></dt><dd><p>List of HARQ classes</p>
+</dd>
+</dl>
+<p>None</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.decode_hybrid_arq">
+<span class="sig-name descname"><span class="pre">decode_hybrid_arq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hybrid_arq_dataframe</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.decode_hybrid_arq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.g_node_b_get_scheduling_request_periodicity">
+<span class="sig-name descname"><span class="pre">g_node_b_get_scheduling_request_periodicity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.g_node_b_get_scheduling_request_periodicity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.generate_pucch">
+<span class="sig-name descname"><span class="pre">generate_pucch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_time</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_pusch_attempt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.generate_pucch" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Generate the pucch packet, given the queue of the current UE.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>current_time<span class="classifier">int</span></dt><dd><p>Current time from the beginning of the simulation in ticks, needed to compute packet elapsed time.</p>
+</dd>
+<dt>first_pusch_attempt<span class="classifier">int</span></dt><dd><p>Time elapsing from the beginning of the simulation to the next first PUSCH occasion in ticks,
+needed to avoid asking for resources which will never be exploited in the future</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>pucch<span class="classifier">PUCCH</span></dt><dd><p>Pucch data with the related fields.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.generate_pusch">
+<span class="sig-name descname"><span class="pre">generate_pusch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_bytes_overhead_5g_nr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.generate_pusch" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Generate the PUSCH packet, given the queue of the current UE.</p>
+</div></blockquote>
+<dl class="simple">
+<dt>current_time<span class="classifier">int</span></dt><dd><p>Current time in ticks, needed to compute packet elapsed time.</p>
+</dd>
+<dt>n_bytes_overhead_5g_nr<span class="classifier">int</span></dt><dd><p>Number of bytes introduced by the 5G-NR protocol stack.
+If None, they have been already included by the UE in the previous mapping</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>pucch<span class="classifier">PUSCH</span></dt><dd><p>PUSCH data with the related fields.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_burst_size">
+<span class="sig-name descname"><span class="pre">get_burst_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_burst_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_carrier_frequency">
+<span class="sig-name descname"><span class="pre">get_carrier_frequency</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_carrier_frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_channel">
+<span class="sig-name descname"><span class="pre">get_channel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_channel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_coordinates">
+<span class="sig-name descname"><span class="pre">get_coordinates</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_current_packet_id">
+<span class="sig-name descname"><span class="pre">get_current_packet_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_current_packet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_current_packet_priority">
+<span class="sig-name descname"><span class="pre">get_current_packet_priority</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_current_packet_priority" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_current_packet_transmission_number">
+<span class="sig-name descname"><span class="pre">get_current_packet_transmission_number</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_current_packet_transmission_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_distance_from_g_node_b">
+<span class="sig-name descname"><span class="pre">get_distance_from_g_node_b</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_distance_from_g_node_b" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_last_packet_id">
+<span class="sig-name descname"><span class="pre">get_last_packet_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_last_packet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_los_condition">
+<span class="sig-name descname"><span class="pre">get_los_condition</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_los_condition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_min_mb_to_be_send">
+<span class="sig-name descname"><span class="pre">get_min_mb_to_be_send</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_min_mb_to_be_send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_new_packet_priority">
+<span class="sig-name descname"><span class="pre">get_new_packet_priority</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_new_packet_priority" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_next_packet_generation_instant">
+<span class="sig-name descname"><span class="pre">get_next_packet_generation_instant</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_next_packet_generation_instant" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_packet_list_size">
+<span class="sig-name descname"><span class="pre">get_packet_list_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_packet_list_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_scheduling_request_periodicity">
+<span class="sig-name descname"><span class="pre">get_scheduling_request_periodicity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_scheduling_request_periodicity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_scheduling_response_periodicity">
+<span class="sig-name descname"><span class="pre">get_scheduling_response_periodicity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_scheduling_response_periodicity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_state">
+<span class="sig-name descname"><span class="pre">get_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_state_duration">
+<span class="sig-name descname"><span class="pre">get_state_duration</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_state_duration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_ue_id">
+<span class="sig-name descname"><span class="pre">get_ue_id</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_ue_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_ul_buffer">
+<span class="sig-name descname"><span class="pre">get_ul_buffer</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_ul_buffer" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.get_updated_packet_list">
+<span class="sig-name descname"><span class="pre">get_updated_packet_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.get_updated_packet_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.increment_current_packet_transmission_number">
+<span class="sig-name descname"><span class="pre">increment_current_packet_transmission_number</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.increment_current_packet_transmission_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.is_pdcch_for_me">
+<span class="sig-name descname"><span class="pre">is_pdcch_for_me</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdcch_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="packet.html#packet.PDCCH" title="packet.PDCCH"><span class="pre">packet.PDCCH</span></a><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.is_pdcch_for_me" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><p>Checks whether there is a PDCCH intended for this UE</p>
+</div></blockquote>
+<dl class="simple">
+<dt>pdcch_list<span class="classifier">list</span></dt><dd><p>List of PDCCH</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>is_pdcch_for_me<span class="classifier">bool</span></dt><dd><p>True if the PDCCH has been found, false otherwise</p>
+</dd>
+<dt>su_index: list of tuples</dt><dd><p>The indexes of the scheduling unit in which the UE can transmit its PUSCH</p>
+</dd>
+<dt>n_rbs_per_su: list of tuples</dt><dd><p>Number of resource blocks assigned for the transmission of the PUSCH</p>
+</dd>
+<dt>rb_index: list of tuples</dt><dd><p>The indexes of the resource blocks assigned for the transmission of the PUSCH</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.remove_packet">
+<span class="sig-name descname"><span class="pre">remove_packet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">packet_id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.remove_packet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.schedule_packet">
+<span class="sig-name descname"><span class="pre">schedule_packet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">packet_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.schedule_packet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_burst_size">
+<span class="sig-name descname"><span class="pre">set_burst_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">burst_size</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_burst_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_carrier_frequency">
+<span class="sig-name descname"><span class="pre">set_carrier_frequency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_carrier_frequency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_carrier_frequency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_channel">
+<span class="sig-name descname"><span class="pre">set_channel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_channel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_channel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_coordinates">
+<span class="sig-name descname"><span class="pre">set_coordinates</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_input</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_coordinates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_distance_from_g_node_b">
+<span class="sig-name descname"><span class="pre">set_distance_from_g_node_b</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ue_g_node_b_distance</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_distance_from_g_node_b" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_los_condition">
+<span class="sig-name descname"><span class="pre">set_los_condition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_in_los</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_los_condition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_mb_to_be_sent">
+<span class="sig-name descname"><span class="pre">set_mb_to_be_sent</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mb_to_be_sent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_mb_to_be_sent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_min_mb_to_be_send">
+<span class="sig-name descname"><span class="pre">set_min_mb_to_be_send</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_min_mb_to_be_send</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_min_mb_to_be_send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_new_packet_arrival_time">
+<span class="sig-name descname"><span class="pre">set_new_packet_arrival_time</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_arrival_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_new_packet_arrival_time" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_new_packet_priority">
+<span class="sig-name descname"><span class="pre">set_new_packet_priority</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_priority</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_new_packet_priority" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_new_packet_qos_latency">
+<span class="sig-name descname"><span class="pre">set_new_packet_qos_latency</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_qos_latency</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_new_packet_qos_latency" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_new_packet_qos_reliability">
+<span class="sig-name descname"><span class="pre">set_new_packet_qos_reliability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_qos_reliability</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_new_packet_qos_reliability" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_new_packet_size">
+<span class="sig-name descname"><span class="pre">set_new_packet_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_new_packet_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_scheduling_request_periodicity">
+<span class="sig-name descname"><span class="pre">set_scheduling_request_periodicity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheduling_request_periodicity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_scheduling_request_periodicity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_scheduling_request_periodicity_g_node_b">
+<span class="sig-name descname"><span class="pre">set_scheduling_request_periodicity_g_node_b</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scheduling_request_periodicity</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_scheduling_request_periodicity_g_node_b" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_state">
+<span class="sig-name descname"><span class="pre">set_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_state</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_state" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_ue_id">
+<span class="sig-name descname"><span class="pre">set_ue_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ue_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_ue_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.set_ue_id_of_new_packet">
+<span class="sig-name descname"><span class="pre">set_ue_id_of_new_packet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.set_ue_id_of_new_packet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ue.Ue.update_state_duration">
+<span class="sig-name descname"><span class="pre">update_state_duration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_ticks</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ue.Ue.update_state_duration" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+</div>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+
+        <div class="related-information">
+              Copyright &#169; 2022, CTN |
+          Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+          <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
+            | <a class="muted-link" href="_sources/ue.rst.txt"
+               rel="nofollow">
+              Show Source
+            </a>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>
